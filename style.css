@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+  color: rgb(0, 0, 0);
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+.BG{
+    background: rgb(21, 22, 34);
+    background: linear-gradient(
+      130deg,
+      rgb(214, 214, 218) 0%,
+      rgba(5, 10, 54, 1) 70%,
+      rgb(114, 0, 0) 100%
+    );
+}
+
+.BGMirror{
+    background: rgb(21, 22, 34);
+    background: linear-gradient(
+    50deg,
+    rgb(214, 214, 218) 0%,
+    rgba(5, 10, 54, 1) 70%,
+    rgb(114, 0, 0) 100%
+  );
+}
+
+
+
+.slider-page-wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider-page-wrapper .slider {
+  width: 100%;
+  height: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .sliding-card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  transition: all 0.4s ease-in-out;
+
+  min-width: 21rem; /* 275px; */
+  max-width: 25rem; /* 350px; */
+}
+
+
+.slider .sliding-card .img-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+  background-color: rgba(172, 0, 0, 0.548);
+  line-height: 1.4rem;
+  padding: 0.5rem;
+}
+
+.slider .sliding-card .img-text-container p {
+  z-index: 25;
+  opacity: 1;
+  margin: 1rem;
+}
+
+.slider .sliding-card h2 {
+  position: absolute;
+  line-height: 1.8rem;
+  color: #fff;
+  left: 50%;
+  top: -10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+
+
+ .project-card{
+    width: 40%;
+    height: 40rem;
+    background-color: rgba(190, 10, 10, 0.559);
+}
+
+.project-card h2{
+    text-align: center;
+}
+
+.project-card p{
+    text-align: start;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+h5{
+  text-align: start;
+  margin-left: 2.4em;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+
+
+.projectLayout{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  
+}
+
+.content::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+ ::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+} 
+
+
+
+/* Buttons */
+.buttons-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0.9rem;
+  background-color: transparent;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#prev,
+#next {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+}
+
+#prev:hover,
+#next:hover {
+  cursor: pointer;
+}
+
+#prev:active,
+#next:active {
+  transform: scale(0.8);
+}
+
+.floatBtn{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+
+
+/* Decreasing size of icons */
+.buttons-container .material-icons {
+  font-size: 40px;
+}
+
+/* Image slider effects */
+
+.before-current {
+  transform: scale(0.55) translate(-250%, -66.5%);
+  top: 50%;
+  left: 50%;
+  opacity: 0.75;
+  z-index: 20;
+}
+
+
+.current {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.current:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.15);
+}
+
+.after-current {
+  display: none;
+  transform: scale(0.55) translate(116.5%, -66.5%);
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+  z-index: 20;
+}
+.after-current .display-none,
+.before-current .display-none {
+  display: none;
+}
+.slider .sliding-card:nth-child(2) .before-current {
+  background: none;
+}
+
+
+.last-card {
+  transform: scale(0.3) translate(60%, -100%);
+  top: 50%;
+  left: 50%;
+  opacity: 0.75;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+  }
+
+.a {
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+}
+
+li {
+  list-style: none;
+  opacity: 0.75;
+}
+
+li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

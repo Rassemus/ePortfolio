@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Rasmus Granholm webDev ePortfolio</title>
+</head>
+<body>
+    <a href="#eka" class="floatBtn">
+        <i class="material-icons">
+                arrow_upward
+        </i>
+    </a>
+    <section name="eka" id="eka" class="sectionOne BG">
+    <nav>
+        <ul>
+            <li class="first a" id="iButton">Web-Ohjelmointi</li>
+            <li class="second a" id="projectsButton">Projektit</li>
+            <li class="thirth a" id="feedBackButton">Palaute</li>
+        </ul>
+    </nav>
+    <div class="slider-page-wrapper">
+      
+        <div class="slider">
+            <div class="sliding-card before-current" id="contact">
+                <h2>Palaute</h2>
+                
+                <div class="img-text-container display-none content">
+                    <p>
+                Kirjoita palaute tähän
+
+                    </p>
+                </div>
+            </div> 
+
+            <div class="sliding-card current" id="mina">
+                <h2>Web-ohjelmointi 1</h2>
+              
+                <div class="img-text-container display-none content">
+                   
+                    <p>
+                       Katsele Web-ohjelmointi kurssilla tekemiäni projekteja tai lue kurssilla oppimiani asioita, sekä antamaani palautetta.
+                       <br><br>
+                       Tämän sivun ulkoasun on suunnitellut ja toteuttanut Rasmus Granholm.
+                    </p>
+                    
+                    <p>
+                        Kurssilla pidettiin kirjaa siitä mitä viikkojen aikana on tehty.
+                        <a target="_blank" href="https://hackmd.io/@Rasmus-G/SJjnhTBlj">Linkki kehittäjän blogiini</a>
+                        josta voi katsoa viikkojen aikana tapahtuneet suoritukset ja harjoitukset.<br></br>
+                        Osa projektien github repositorioisat ovat yksityisiä, niihin on mahdollista pyytää tarkastelu oikeus.<br></br>
+                        Selaa nuolilla oikealle ja vasemmalle, tarkastellaksesi kortteja tarkemmin
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="sliding-card after-current" id="portfol">
+                <h2>Projektit</h2>
+                <div class="img-text-container display-none">
+                    <p>
+                        <ul>
+                            <li><a href="#toka">Ensimmäinen web sivu</a></li>
+                            <li><a href="#toka">Palindromi</a></li>
+                            <li><a href="#kolmas">Puhelinluettelo</a></li>
+                            <li><a href="kolmas">Urheilu1</a></li>
+                            <li><a href="#neljas">Sanakirja</a></li>
+                            <li><a href="#neljas">Sanakirja käyttöliittymä</a></li>
+                            <li><a href="#viides">Node ja Express</a></li>
+                            <li><a href="#viides">Post-app</a></li>
+                            <li><a href="#kuudes">Urheilija lista</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button id="prev">
+                <span class="material-icons">
+                    arrow_back
+                    </span>
+            </button>
+            
+            <button id="next">
+                <span class="material-icons">
+                    arrow_forward
+                    </span>
+            </button>
+        </div>
+    </div>
+</section>
+<section name="toka" id="toka" class="sectionTwo BGMirror">
+    <div class="slider-page-wrapper">
+        <div class="projectLayout" >
+            <div  class="project-card">
+                <h2 id="">Ensimmäinen web sivu</h2>
+                   <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/webEkaSivu" >Ensimmäinen web sivu</a></p> 
+                   <p>
+                    Tehtävässä muokattiin valmiiseen pohjaan itselleen sopiva html sivu. Koodi ajettiin html-validatorissa, tarkasteltiin
+                    tuloksia tehtiin muutokset sen mukaan. Myös css-validaattoria käytettiin tarkistamaan tyylitystä. Tehtävän tarkoituksena oli
+                    tutustua ohjelmiin jotka voivat auttaa kehitystyössä.
+                   </p>
+                  <p>
+                    Koodi on nähtävissä GitHubissa.
+                  </p>
+            </div>
+                <div class="project-card right">
+                    <h2 id="pal">Palindromi</h2>
+                    <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/palindromi">Palindromi</a></p>
+                    <p>
+                       Tehtävän tarkoituksena oli muistella JavaScriptin käyttöä. Ohjelmalle annetaan parametrina sana, joka tarkistetaan
+                       onko sana palindromi vai ei. Ohjelma palauttaa TOSI tai EPÄTOSI, riippuen siitä onko sana palindromi vai ei. 
+                    </p>
+                    <p>Koodi on nähtävissä GitHub:ssa.</p>
+                </div>
+    </div>
+</section>
+
+<section name="kolmas" id="kolmas" class="sectionThree BG">
+    <div class="slider-page-wrapper" >
+        <div class="projectLayout">
+            <div class="project-card right">
+                <h2>Puhelinluettelo</h2>
+                <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/Puhelinluettelo">Puhelinluettelo</a></p>
+                <p>
+                    Ohjelma ei sisällä graafista käyttöliittymää, sitä on kuitenkin mahdollista käyttää terminaalin kautta. 
+                    Ohjelmalla on mahdollista etsiä numeroa nimellä tai tallentaa nimi ja numero pari.
+                    Numero ja nimi on tallennettu nimi/numero olio pariksi. Haku toiminnolle annetaan numero luettelo parametriksi, josta
+                    se hakee numeron nimen perusteella. Numeron lisäämisessä kysytään käyttäjält nimi ja numero jotka tallennetaan luetteloon push
+                    metodilla.
+                </p>
+                <p>Koodi on nähtävissä GitHub:ssa.</p>
+            </div>
+            <div class="project-card left">
+                <h2>Urheilu1</h2>
+                <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/Urheilu1">Urheilu1</a></p>
+                <p>
+                    JavaScrip luokkamäärittely harjoittelu. Tehtävänä oli harjoitella luokka määrittelyä. Tehtävässä Henkilö luokka
+                    perii luokan urjeilija. Luokan periytymistä oli hyvä harjoitella, sillä se tuotti hieman hämmennystä. 
+                </p>
+                <p>
+                    Luokka komponenttiin voi tutustua GitHub:ssa.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section name="neljas" id="neljas" class="sectionFour BGMirror">
+    <div class="slider-page-wrapper" >
+        <div class="projectLayout">
+            <div class="project-card right">
+                <h2>Sanakirja</h2>
+                <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/sanakirja">Sanakirja</a></p>
+                <p>
+                    Sanakirja tallentaa sanaparit tekstitiedostoon. Sanoja voi hakea myös tiedostosta, antamalla parametriksi sanan vastine.
+                    Ohjelma käyttää GET ja POST metodeja. Tiedot syötetään JSON muodossa esimerkiksi Postman ohjelmaa käyttäen.
+                </p>
+                <p>
+                    GitHubi:ssa on mahdollista tutustua tarkemmin toteutukseen, linkin löydät kirjoutksen alusta.
+                </p>
+            </div>
+            <div class="project-card left">
+                <h2>Sanakirja käyttöliittymä</h2>
+                <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/Sanakirja_kayttoliittyma">Sanakirja käyttoliittymä</a></p>
+                <p>
+                    Tehtävässä oli tarkoitus tehdä käyttöliittymä edelliselle sanakirja toteutukselle. Käyttöliittymään on lisätty input
+                    elementit joihin voi kirjata suomen kielisen sanan, api palauttaa painiketta painettaessa sanan englannin kieleisen vastineen.
+                    Sanoja voi myös hakea toisin päin. <br></br>
+                    Kättöliittymän kautta on mahdollista myös lisätä uusia sanoja tekstitiedostoon. Tietojen lisäämiseen on käytetty apuna edellisen tehtävän
+                    backend toteutusta.
+                </p>
+                <p>
+                    GitHubi:ssa on mahdollista tutustua tarkemmin toteutukseen, linkin löydät kirjoutksen alusta.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section name="viides" id="viides" class="sectionFive BG">
+    <div class="slider-page-wrapper" >
+        <div class="projectLayout">
+            <div class="project-card right">
+                <h2>Node ja Express</h2>
+                <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/Node-Express">Node ja Express</a></p>
+                <p>
+                    Tehtävänä oli lisätä koodiin REST rajapinnan mukaiset PUT ja DELETE metodit. PUT metodilla voidaan päivittää
+                    tietokannassa olevia tietoja. DELETE metodi poistaa tietyn tietueen tietokannasta ID:n avulla. DELETE metodille annetaan
+                    parametrina ID joka halutaan poistaan. Myös PUT saa parametrina tietueen ID:n, jota halutaan muokata.
+                </p>
+                <p>
+                    Tämäkin koodin löytyy github:sta, jonka linkin löydät tekstin alusta.
+                </p>
+            </div>
+
+            <div class="project-card left">
+                <h2>Post-app</h2>
+                <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/PostApp">Post-app</a></p>
+                <p>
+                    Harjoitus oli vapaaehtoinen, jossa tarkoituksena oli luoda Post niminen komponentti muutoin valmiiseen sovellukseen
+                    ja upottaa komponentti Posts komponentin sisälle.<br></br>
+                    Komponentti oli helppo toteuttaa kun käytössä oli React kirjasto. Poimin vain Posts komponentista "table" elementtien sisältä
+                    tarvittavat tiedot. Kun Post komponentti oli valmis kutsuttiin sitä Posts komponentissa oikeassa kohdassa.
+                </p>
+                <p>
+                    GitHubi:ssa on mahdollista tutustua tarkemmin toteutukseen, linkin löydät kirjoutksen alusta.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section name="kuudes" id="kuudes" class="sectionSix BGMirror">
+
+    <div class="slider-page-wrapper" >
+        <div class="projectLayout">
+            <div class="project-card content">
+                <h2 id="upSix">Urheilija lista</h2>
+                <p>GitHub: <a target="_blank" href="https://github.com/Rassemus/listOfAthletes/tree/main">Urheilija</a></p>
+                <p style="margin-top: 1em;">Projektin tarkoituksena oli luoda sovellus, jossa voi lisätä, muokata, poistaa ja tarkastella tallenettuja tietoja.</p>
+                <h5 >Tietokanta</h5>
+                <p>
+                    Projekti oli mielestäni helpointa aloittaa tekemällä tietokanta. Sovelluksessa käsiteltävälle tiedolle oli annettu
+                    selkeät vaatimukset, jonka perusteella tietueille oli helppo antaa oikeat tietomuodot.
+                </p>
+                <h5 >BackEnd</h5>
+                <p> Sovelluksen BackEnd oli
+                    helpompi tehdä, kun tietokanta oli valmis. Kun serveri oli pystytetty ja tietokannan tiedot annettu, testasin saanko vastausta tietokannasta.
+                    Kun tietokannan ja backendin yhteys oli muodostettu ja testattu aloin rakentamaan tarvittavia osia pala kerrallaan.
+                    Ensimmäisenä ohjelmoin tiedon haku toiminnon, olin tallentanut tietokantaan testi dataa, jonka avulla hakua oli helpompi testata.
+                    Tiedot voi hakea joko kaikki kerralla tai ID:n perusteella yksittäisen tietueen. Ohjelmaan on toteutu sql-kyselyt, joita eri funktiot
+                    sitten kutsuvat. Seuraavat ominaisuudet olivat lisäys, poisto ja viimeisenä muokkaus. Lisäys ominaisuus hakee ratjapinnasta tiedot ja luo
+                    uuden tietueen ennalta määritetyn mallin mukaisesti. Lisäys funktio käyttää POST metodia ja kutsuu asyncronisesti funktiota, joka tallentaa tiedot tietokantaan,
+                    sql-kyselyn suorittamalla. <br></br> Poisto ominaisuuden tekeminen oli luonnollinen seuraava vaihe. Poistaminen tietokannasta tapahtuu myös
+                    sql-kyselyllä, jolle annetaan parametrina poistettavan tietueen ID. Poisto funktio on suhteellisen yksinkertainen, se kutsuu vain sql-kysely
+                    funktiota. <br></br>  Viimeisenä haluamme, että sovelluksessa voi myös muokata tietoja. Otamme rajapinnasta haluamamme tiedot ja kutsumme sql-kysely funktiota, joka saa tiedot
+                    parametreina, jotka päivitetään tietokantaan ID:n avulla.
+                </p>
+                <h5>FrontEnd</h5>
+                <p>
+                    Frontissa oli tarkoitus käyttää contextAPI tyyliä ohjelmoida. Tapa ei ollut entuudestaan tuttu, mutta päätin antaa sille mahdollisuuden
+                    Frontissa käytettiin apuna myös React kirjastoa, joka helpottaa mielestäni web-sivujen tekemistä huomattavasti, sillä JavaScriptiä on helpompi
+                    yhdistää, koodin määräkin ainakin tuntuu vähemmältä.<br></br>
+                    Ensimmäisenä piti saada backend toimimaan fronendin kanssa. Päätin testata sitä luomalla komponentin joka rajapinnan kautta tiedot tietokannasta
+                    ja tulostaa ne consoliin. Kun tämä onnistui siirryin toteuttamaan komponenttia jonka avulla asettelisin tietokannasta haettavat tiedot käyttöliittymään näkyviin.
+                    Aluksi kokeilin vain yhdellä tiedolla, että saan näkyviin käyttöliittymään, kun tämä oli onnistunut oli koodia helppo monistaa soveltaen.
+                    Tein käyttöliittymään valmiiksi jo painikkeet muokkaamiselle ja poistamiselle, nämä eivät kuitenkaan tehneet mitään vielä. kun olin saanut näkymän 
+                    mieleisekseni oli aika siirtyä tekemään seuraavia komponentteja.<br></br>
+                    Lisäys komponentti oli seuraava askeleeni. Komponenttiin tuli form johon kirjataan tarvittavat tiedot input elementteihin
+                    kun painetaan tallenna painiketta ottaa handleSubmit funktio hallinan ja kutsuu backendistä funktiota, joka tallentaa tiedot tietokantaan.
+                    <br></br>
+                    Kun lisäys komponentti oli saatu toimimaan oli hyvä tehdä poisto komponentti. Poistamisen toteutin niin, että lisäsin komponenttiin jossa on
+                    tietojen esittäminen ominaisuuden, joka ottaa "poista" painiketta painamalla kyseisen tiedon ID:n ja poistaa tiedot kutsumalla tietojen poisto
+                    funktiota backendistä.<br></br>
+                    Tietojen muokkaamiselle tein vielä oman komponentin, jossa on formi johon täytetään input elementteihin tiedot jotka halutana muuttaa.
+                    Käyttöliittymässä on "muokkaa" painike jokaisen tietueen kohdalla, painiketta painamalla haetaan tietueen ID samaan tapaan kuin poista ominaisuudessa,
+                    näin saadaan kyseisen tiedot näkyviin formiin jolloin voidaan muuttaa vain niitä tietoja joita halutaan muutettavan.<br></br>
+                    Loppuksi vielä hieman tuli hienosäädettyä ulkoasua tyylittelemällä. Tyyli on suhteellisen yksinkertainen.
+                </p>
+                <h5>Mitä tekisin toisin</h5>
+                <p>
+                    Suoranaisesti en muuttaisi ohjelman rakentamis tapaa mitenkään. Opin uutena asiana ContexApi tavan tehdä ohjelmia.
+                    Jos jotain pitäisi muuttaa, muuttaisin ehkä tyyliä hieman, siitä voisi tehdä modernimman ja selkeyttää hieman.
+                    Onnistuin tehtävässäni mielestäni kiitettävästi ja lopputulos oli hyvä.
+                </p>
+                <p>Ohjelman koodiin voi tutustua paremmin github:ssa, jonka linkki löytyy tämän tekstin <a href="#upSix" >alusta</a>.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
