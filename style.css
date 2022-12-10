@@ -84,6 +84,7 @@ nav{
   background-color: rgba(172, 0, 0, 0.548);
   line-height: 1.4rem;
   padding: 0.5rem;
+  border-radius: 2%;
 }
 
 .slider .sliding-card .img-text-container p {
@@ -109,10 +110,13 @@ nav{
     width: 40%;
     height: 40rem;
     background-color: rgba(190, 10, 10, 0.559);
+    border-radius: 2%;
 }
 
 .project-card h2{
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .project-card p{
